@@ -1,0 +1,89 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #83D3FF;
+}
+
+.WeatherDiv{
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+#Output-div{
+  margin: 100px;
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  background-color: hsl(195, 98%, 43%);
+}
+
+#navbar-div{
+  display: flex;
+  justify-content: center;
+  background-color: hsl(200,95%,45%);
+  padding: 10px;
+  gap: 10px;
+}
+
+
+#Link{
+  font-size: large;
+  text-decoration: none;
+  color:#83D3FF;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+#Link:hover{
+  color: hsl(200,95%,45%);
+  background-color:#83D3FF;
+}
+
+h1{
+  text-align: center;
+}
+
+
+
+#Home-div{
+  text-align: center;
+  background-color: hsl(200,95%,45%);
+  color: white;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  box-shadow: 5px 6px 7px 4px black;
+  border-radius: 40px; 
+  transition: 1s;
+}
+#Home-div:hover{
+  scale: 1.05;
+}
+
+
+#HomeF-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
+}
+
+
+#footer-div{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#Footer{
+  width: 100%;
+  background:  hsl(200,95%,45%);
+  color: #83D3FF;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
