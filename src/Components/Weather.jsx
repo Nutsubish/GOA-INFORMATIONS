@@ -13,7 +13,7 @@ function Weather() {
           `http://api.weatherapi.com/v1/current.json?key=2e7c9a8db304473992b151719252802&q=${input}`
         );
         const info = await response.json();
-        setWeather(info);
+        setWeather(info || "");
       } catch (err) {
         setWeather("");
       }

@@ -5,7 +5,7 @@ function NewsSearch() {
   const [news, setNews] = useState([]);
   
   useEffect(() => {
-    if (!input) return;
+    if (input == "") return;
 
     const fetchNews = async () => {
       try {
@@ -13,7 +13,7 @@ function NewsSearch() {
           `https://newsapi.org/v2/everything?q=${input}&from=2025-02-15&sortBy=publishedAt&apiKey=f9444f0b50964e038c09750d3db0b477`
         );
         const data = await response.json();
-        setNews(data.articles);
+        setNews(data.articles || []);
       } catch (error) {
         setNews([]);
       }
